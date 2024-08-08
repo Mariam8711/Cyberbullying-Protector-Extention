@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Cyberbullying Protector",
   "version": "1.0",
-  "description": "Filters offensive words and blocks offensive senders on Discord.",
+  "description": "Filters offensive words and blocks offensive senders on any website.",
   "permissions": [
     "activeTab",
     "scripting",
@@ -11,12 +11,7 @@
   "content_scripts": [
     {
       "matches": [
-        "*://twitter.com/*",
-        "*://web.telegram.org/*",
-        "*://web.whatsapp.com/*",
-        "*://www.messenger.com/*",
-        "*://discord.com/*",
-        "*://www.google.com/*"
+        "<all_urls>"
       ],
       "js": ["content.js"],
       "css": ["styles.css"], 
